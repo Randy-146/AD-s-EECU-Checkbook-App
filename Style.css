@@ -1,0 +1,27 @@
+:root {
+    --Primarycolor: #1F299C;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.Aside {
+    background-color: var(--Primarycolor);
+
+}
+.Aside img {
+    width: 10%;
+}
+.App-Settings p {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+h2 {
+color: white;
+font-size: 24px;
+font-weight: 400; 
+}
