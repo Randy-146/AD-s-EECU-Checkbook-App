@@ -20,16 +20,52 @@ async function getCareers() {
 function createOptions(careers) {
     const dropdown = document.getElementById("careerSelect")
     careers.forEach((career, index) => {
+
         const options = document.createElement("option");
-        options.innerHTML = `${career.Occupation}: ${career.Salary}`; //alter to fit $X,XXX,XXX format
+        options.innerHTML = `${career.Occupation}: ${career.Salary.toLocaleString()}`;
         options.setAttribute("id", `${index}`);
+        options.setAttribute("value", `${career.Salary}`);
         options.addEventListener("click", () => {
             careerTitle.innerHTML = `Future Career: ${career.Occupation}`;
-            console.log(`Selected Career: ${career.Occupation}, Salary: ${career.Salary}`);
         });
         dropdown.appendChild(options);
-        console.log("creating");
     });
 }
 
+
+
 getCareers(); //initating dropdown creation
+
+function getMonthlyIncome(monthlyIncome) {
+    const salary = career.Salary.toLocaleString; //grabbing salary from dropdown, needs to be fixed
+    const monthlyIncome = salary / 12;
+    options.addEventListener("click", getMonthlyIncome);
+    return monthlyIncome;
+}
+
+console.log(getMonthlyIncome());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
