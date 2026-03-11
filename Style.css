@@ -97,3 +97,15 @@ a {
     display: block;
 }
 
+#container {
+display: flex;
+flex-direction: row;
+width: 400px;
+}
+
+
+
+.btn-align {
+    display: flex;
+    flex-direction: column;
+}
